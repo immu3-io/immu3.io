@@ -2,6 +2,17 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www"
+        }
+      ],
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
       "source": "index",
       "destination": "/",
       "permanent": true
